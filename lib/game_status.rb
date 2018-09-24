@@ -17,5 +17,6 @@ WIN_COMBINATIONS = [
   ]
   
   def won?(board)
-    if board.include(WIN_COMBINATIONS)
+    if WIN_COMBINATIONS.include do |win_combo|
+      return win_combo
       
