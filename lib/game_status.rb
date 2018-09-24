@@ -27,5 +27,5 @@ WIN_COMBINATIONS = [
   end 
   
   def full?(board)
-    board.all?{|i| i != " "}
+    board.none?{|i| i == " "}
 end
