@@ -38,7 +38,7 @@ def over?(board)
   won?(board) || full?(board) || draw?(board)
 end
 
-def winner?(board)
+def winner(board)
   WIN_COMBINATIONS.each do |win_combination|
   if (board[win_combination[0]]) == "X" && (board[win_combination[1]]) == "X" && (board[win_combination[2]]) == "X" 
   return 'X'
